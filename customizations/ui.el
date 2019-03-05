@@ -18,7 +18,6 @@
 
 (if (boundp 'fringe-mode)
     (fringe-mode '(4 . 0)))
-(global-git-gutter-mode +1)
 
 ;; Configure the mode line
 (setq-default mode-line-format
@@ -173,19 +172,6 @@
 
 (advice-add 'window-splittable-p :before-while #'do-not-split-more-than-two-windows)
 
-;; git fringe
-(require 'git-gutter-fringe)
-;; places the git gutter outside the margins.
-(setq-default fringes-outside-margins t)
-;; thin fringe bitmaps
-(fringe-helper-define 'git-gutter-fr:added '(center repeated)
-                      "XXX.....")
-(fringe-helper-define 'git-gutter-fr:modified '(center repeated)
-                      "XXX.....")
-(fringe-helper-define 'git-gutter-fr:deleted 'bottom
-  "X......."
-  "XX......"
-  "XXX....."
-  "XXXX....")
 
-(global-display-line-numbers-mode)
+(when (version<= "26.0.50" emacs-version )
+  (global-display-line-numbers-mode))

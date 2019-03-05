@@ -63,7 +63,7 @@
     ;; allow ido usage in as many contexts as possible. see
     ;; customizations/better-defaults.el line 47 for a description
     ;; of ido
-    ido-ubiquitous
+    ido-completing-read+
 
     ;; Enhances M-x to allow easier execution of commands. Provides
     ;; a filterable list of possible commands in the minibuffer
@@ -98,22 +98,14 @@
     yaml-mode
     coffee-mode
     scss-mode
-    haskell-mode
     company
-    ack-and-a-half
     ag
     adoc-mode
     aggressive-indent
     web-mode
-    enh-ruby-mode
     base16-theme
-    git-gutter
-    helm
-    helm-ag
-    helm-git-grep
-    helm-projectile
-    helm-descbinds
     yasnippet
+    doom-themes
     use-package))
 
 (dolist (p my-packages)
@@ -164,9 +156,6 @@
 ;; For editing lisps
 (load "elisp-editing.el")
 
-;; helm
-(load "setup-helm.el")
-
 ;; Langauage-specific
 (load "setup-clojure.el")
 (load "setup-js.el")
@@ -174,7 +163,6 @@
 (load "setup-yaml.el")
 (load "setup-org.el")
 (load "setup-prolog.el")
-(load "setup-ruby.el")
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -192,10 +180,10 @@
    (quote
     ("4486ade2acbf630e78658cd6235a5c6801090c2694469a2a2b4b0e12227a64b9" "1b8d67b43ff1723960eb5e0cba512a2c7a2ad544ddb2533a90101fd1852b426e" "06f0b439b62164c6f8f84fdda32b62fb50b6d00e8b01c2208e55543a6337433a" default)))
  '(fci-rule-color "#373b41")
- '(org-agenda-files (quote ("~/Dropbox/org-life/master.org")))
+ '(org-agenda-files (quote ("~/Dropbox/org-life/master.org")) t)
  '(package-selected-packages
    (quote
-    (sass-mode swiper-helm counsel ivy powerline monokai-theme atom-one-dark-theme dracula-theme clojure-mode-extra-font-locking django-mode csv-mode csv doom-themes markdown-mode+ moe-theme org-bullets ac-cider base16-theme clojure-mode scss-mode yaml-mode web-mode use-package thesaurus tagedit smex rainbow-delimiters php-mode noflet markdown-mode magit ido-ubiquitous helm-projectile helm-ls-git helm-git-grep helm-descbinds helm-ag haskell-mode haml-mode git-gutter exec-path-from-shell enh-ruby-mode dockerfile-mode csharp-mode crux company color-theme-sanityinc-tomorrow coffee-mode clj-refactor aggressive-indent ag adoc-mode adjust-parens ack-and-a-half)))
+    (sass-mode counsel ivy powerline monokai-theme atom-one-dark-theme dracula-theme clojure-mode-extra-font-locking django-mode csv-mode csv markdown-mode+ moe-theme org-bullets ac-cider base16-theme clojure-mode scss-mode yaml-mode web-mode use-package thesaurus tagedit smex rainbow-delimiters php-mode noflet markdown-mode magit ido-ubiquitous haml-mode exec-path-from-shell dockerfile-mode crux company color-theme-sanityinc-tomorrow coffee-mode clj-refactor aggressive-indent ag doom-themes adoc-mode adjust-parens)))
  '(safe-local-variable-values
    (quote
     ((cider-refresh-after-fn . "integrant.repl/resume")
