@@ -180,7 +180,7 @@
    (quote
     ("4486ade2acbf630e78658cd6235a5c6801090c2694469a2a2b4b0e12227a64b9" "1b8d67b43ff1723960eb5e0cba512a2c7a2ad544ddb2533a90101fd1852b426e" "06f0b439b62164c6f8f84fdda32b62fb50b6d00e8b01c2208e55543a6337433a" default)))
  '(fci-rule-color "#373b41")
- '(org-agenda-files (quote ("~/Dropbox/org-life/master.org")) t)
+ '(org-agenda-files (quote ("~/Dropbox/org-life/master.org")))
  '(package-selected-packages
    (quote
     (sass-mode counsel ivy powerline monokai-theme atom-one-dark-theme dracula-theme clojure-mode-extra-font-locking django-mode csv-mode csv markdown-mode+ moe-theme org-bullets ac-cider base16-theme clojure-mode scss-mode yaml-mode web-mode use-package thesaurus tagedit smex rainbow-delimiters php-mode noflet markdown-mode magit ido-ubiquitous haml-mode exec-path-from-shell dockerfile-mode crux company color-theme-sanityinc-tomorrow coffee-mode clj-refactor aggressive-indent ag doom-themes adoc-mode adjust-parens)))
@@ -225,4 +225,4 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- )
+ '(default ((t (:inherit nil :stipple nil :background "#1d1f21" :foreground "#c5c8c6" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 100 :width normal :foundry "CTDB" :family "Fira Code")))))
