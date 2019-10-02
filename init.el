@@ -9,21 +9,21 @@
 (add-to-list 'package-archives
              '("org" . "http://orgmode.org/elpa/") t)
 (add-to-list 'package-archives
-             '("melpa" . "http://melpa.org/packages/") t)
+             '("melpa" . "https://melpa.org/packages/") t)
 (add-to-list 'package-archives
-             '("melpa-stable" . "http://stable.melpa.org/packages/") t)
+             '("melpa-stable" . "https://stable.melpa.org/packages/") t)
 
-(add-to-list 'package-pinned-packages '(cider . "melpa-stable") t)
+;; (add-to-list 'package-pinned-packages '(cider . "melpa-stable") t)
 ;; (add-to-list 'package-pinned-packages '(clj-refactor . "melpa-stable") t)
-(add-to-list 'package-pinned-packages '(magit . "melpa-stable") t)
+;; (add-to-list 'package-pinned-packages '(magit . "melpa-stable") t)
 ;; (add-to-list 'package-pinned-packages '(helm-projectile . "melpa-stable") t)
 
 ;; Load and activate emacs packages. Do this first so that the
 ;; packages are loaded before you start trying to modify them.
 ;; This also sets the load path.
 (package-initialize)
-(setq package-enable-at-startup nil)
-;; (require 'use-package)
+;;(setq package-enable-at-startup nil)
+(require 'use-package)
 
 ;; Download the ELPA archive description if needed.
 ;; This informs Emacs about the latest versions of all packages, and
