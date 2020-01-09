@@ -164,7 +164,7 @@
 (load "setup-yaml.el")
 (load "setup-org.el")
 (load "setup-prolog.el")
-
+(load "setup-rust.el")
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -184,7 +184,7 @@
  '(org-agenda-files (quote ("~/Dropbox/org-life/master.org")) t)
  '(package-selected-packages
    (quote
-    (yang-mode rust-mode sass-mode counsel ivy powerline monokai-theme atom-one-dark-theme dracula-theme clojure-mode-extra-font-locking django-mode csv-mode csv markdown-mode+ moe-theme org-bullets ac-cider base16-theme clojure-mode scss-mode yaml-mode web-mode use-package thesaurus tagedit smex rainbow-delimiters php-mode noflet markdown-mode magit ido-ubiquitous haml-mode exec-path-from-shell dockerfile-mode crux company color-theme-sanityinc-tomorrow coffee-mode clj-refactor aggressive-indent ag doom-themes adoc-mode adjust-parens)))
+    (flycheck-rust racer cargo ## company-terraform yang-mode rust-mode sass-mode counsel ivy powerline monokai-theme atom-one-dark-theme dracula-theme clojure-mode-extra-font-locking django-mode csv-mode csv markdown-mode+ moe-theme org-bullets ac-cider base16-theme clojure-mode scss-mode yaml-mode web-mode use-package thesaurus tagedit smex rainbow-delimiters php-mode noflet markdown-mode magit ido-ubiquitous haml-mode exec-path-from-shell dockerfile-mode crux company color-theme-sanityinc-tomorrow coffee-mode clj-refactor aggressive-indent ag doom-themes adoc-mode adjust-parens)))
  '(safe-local-variable-values
    (quote
     ((cider-refresh-after-fn . "integrant.repl/resume")
